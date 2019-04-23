@@ -51,7 +51,7 @@ app.post('/delete', (req, res) => {
             fs.writeFile(path.join(__dirname, './src/codes.json'), changedCodesStr, () => {
                 console.log("Encryption done.");
                 return res.render('index', {
-                    msg: "This code has been set to used."
+                    msg: `Code ${index + 1} has been set to used.`
                 });
             });
 
