@@ -18,6 +18,10 @@
             {{/if}}
         {{/if}}
 
+        {{#if checkErr}}
+            <p>{{checkErr}}</p>
+        {{/if}}
+
         <h1>Set Code to Used</h1>
         <form action="/delete" method="POST">
             <input type="text" name="code">
@@ -26,6 +30,10 @@
 
         {{#if msg}}
             <p>{{msg}}</p>
+        {{/if}}
+
+        {{#if setErr}}
+            <p>{{setErr}}</p>
         {{/if}}
     </body>
 </html>
