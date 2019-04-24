@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 const {encodeStr, encryptor} = require("./config");
 
@@ -22,7 +23,7 @@ const cryptedCodes = rawCodes.map(code => {
 //console.log(cryptedCodes);
 
 const codesJSONStr = JSON.stringify(cryptedCodes);
-fs.writeFile("./codes.json", codesJSONStr, () => {
+fs.writeFile(path.join(__dirname, "/codes.json"), codesJSONStr, () => {
     console.log("Encryption done.");
 });
 

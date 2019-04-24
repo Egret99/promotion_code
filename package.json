@@ -11,9 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.6",
+    "cryptr": "^4.0.2",
     "express": "^4.16.4",
     "hbs": "^4.0.4",
-    "mongoose": "^5.5.3",
-    "simple-encryptor": "^2.0.0"
+    "mongoose": "^5.5.3"
   }
 }

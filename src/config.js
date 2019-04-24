@@ -1,7 +1,8 @@
 const url = "";
-const encodeStr = "TMDAUTOSPROMOTIONCODE";
+const encodeStr = "TMDAUTOSPROMOTION";
 
-const encryptor = require('simple-encryptor')(encodeStr);
+const Encryptor = require('cryptr');
+const encryptor = new Encryptor(encodeStr);
 
 module.exports = {
     url,
